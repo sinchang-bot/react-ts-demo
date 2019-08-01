@@ -1,5 +1,4 @@
-import React from 'react';
-import './App.css';
+import React from 'react'
 
 const App: React.FC = () => {
   return (
@@ -8,7 +7,7 @@ const App: React.FC = () => {
         <h3>React with TypeScript Demo</h3>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
