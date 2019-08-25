@@ -1,16 +1,11 @@
-export interface ITodoForm {
-  userId?: string
-  todoId?: string
+export interface IWeather {
+  weather_state_name: string
+  applicable_date: string
+  the_temp: number
 }
 
-export interface ITodoListItem {
-  userId: number
-  id: number
-  title: string
-  completed: boolean
-}
-
-export interface ITodoState {
-  todoList: ITodoListItem[]
-  todoForm: ITodoForm
+export interface IWeatherState {
+  weatherList: IWeather[]
+  loading: boolean
+  errorMsg: string
 }
