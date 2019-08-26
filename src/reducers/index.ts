@@ -4,7 +4,8 @@ import { WeatherAction, WeatherActionTypes } from '../actions'
 export const initialState: IWeatherState = {
   weatherList: [],
   loading: false,
-  errorMsg: ''
+  errorMsg: '',
+  woeid: 0
 }
 
 export default (state = initialState, action: WeatherAction): IWeatherState => {
@@ -27,6 +28,12 @@ export default (state = initialState, action: WeatherAction): IWeatherState => {
         ...state,
         errorMsg: action.payload.errorMsg,
         loading: false
+      }
+
+    case WeatherActionTypes.WOEID_SET:
+      return {
+        ...state,
+        woeid: action.payload.woeid
       }
 
     default:

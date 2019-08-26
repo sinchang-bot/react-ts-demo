@@ -33,6 +33,7 @@ export default class App extends React.Component<AppProps, IAppOwnState> {
   }
 
   onClick = () => {
+    if (!this.state.cityName) return
     this.props.fetchWeather(this.state.cityName)
   }
 

@@ -8,4 +8,5 @@ export interface IWeatherState {
   weatherList: IWeather[]
   loading: boolean
   errorMsg: string
+  woeid: number
 }
