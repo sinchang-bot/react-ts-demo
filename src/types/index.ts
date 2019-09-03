@@ -1,7 +1,8 @@
 export interface IWeather {
   weather_state_name: string
   applicable_date: string
-  the_temp: number
+  the_temp: number,
+  id: number
 }
 
 export interface IWeatherState {

@@ -50,14 +50,16 @@ export default class App extends React.Component<AppProps, IAppOwnState> {
             onChange={this.onChange}
             value={this.state.cityName}
           />
-          <button type="button" onClick={ this.onClick }>Search</button>
+          <button type="button" onClick={this.onClick}>
+            Search
+          </button>
         </form>
         <ul>
-          { weatherList.map(weather => (
-            <li>
-              <p>Date: { weather.applicable_date }</p>
-              <p>Temp: { weather.the_temp }</p>
-              <p>Weather: { weather.weather_state_name }</p>
+          {weatherList.map(weather => (
+            <li key={weather.id}>
+              <p>Date: {weather.applicable_date}</p>
+              <p>Temp: {weather.the_temp}</p>
+              <p>Weather: {weather.weather_state_name}</p>
             </li>
           ))}
         </ul>
