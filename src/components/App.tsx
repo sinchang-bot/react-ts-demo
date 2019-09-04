@@ -1,4 +1,5 @@
 import * as React from 'react'
+import  { Breakpoint, BreakpointProvider } from 'react-socks'
 import { IWeather } from '../types'
 
 export interface IAppStateProps {
@@ -41,6 +42,10 @@ export default class App extends React.Component<AppProps, IAppOwnState> {
     const { weatherList, loading, errorMsg } = this.props
     return (
       <React.Fragment>
+        <BreakpointProvider>
+          <Breakpoint medium down>mobile device</Breakpoint>
+          <Breakpoint large up>desktop device</Breakpoint>
+        </BreakpointProvider>
         {errorMsg && <div className="red">{errorMsg}</div>}
         {loading && <div>loading...</div>}
         <form action="">

@@ -8036,6 +8036,11 @@ react-scripts@3.0.1:
   optionalDependencies:
     fsevents "2.0.6"
 
+react-socks@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/react-socks/-/react-socks-2.0.2.tgz#3a0a5c951f36405eae1ae0dbafe8dce2aa117927"
+  integrity sha512-zNSnS0hjPd7h0fw7YfU2V83MKL0JMNvO3C/zx+TP7hBBB2QIdmLTHUucguVpFk73IVezsTX6zVDDE0zZ/AsP3w==
+
 react@^16.8.6:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react/-/react-16.8.6.tgz#ad6c3a9614fd3a4e9ef51117f54d888da01f2bbe"
